@@ -4,12 +4,12 @@ import Scss from "./Landing.module.scss";
 
 const Landing = (props) => {
   return (
-    <div
+    <section
       className={`d-flex justify-content-center align-items-center ${Scss.Landing}`}
       style={{ height: "95vh" }}
     >
       <div className="jumbotron container">
-        <h1 className="display-1 font-weight-bold ">
+        <h1 className="font-weight-bold display-1  ">
           Join the tracking free social media
         </h1>
         <p className="lead">
@@ -26,7 +26,7 @@ const Landing = (props) => {
           </a>
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

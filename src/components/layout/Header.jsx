@@ -1,17 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const header = () => {
   let signinOption = (
     <ul className="navbar-nav ml-4">
       <li className="nav-item">
-        <a className="nav-link" to="/register">
+        <Link className="nav-link" to="/register">
           Sign Up
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" to="/login">
+        <Link className="nav-link" to="/login">
           Login
-        </a>
+        </Link>
       </li>
     </ul>
   );
@@ -19,9 +20,9 @@ const header = () => {
     <header>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
-          <a className="navbar-brand" href="">
+          <Link className="navbar-brand" to="/">
             SM project
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -35,15 +36,15 @@ const header = () => {
           </button>
           <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
             <div className="navbar-nav ">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link className="nav-link active" aria-current="page" to="/">
                 Home
-              </a>
-              <a className="nav-link" href="#">
-                Features
-              </a>
-              <a className="nav-link" href="#">
+              </Link>
+              <Link className="nav-link" to="/profile">
+                Profile
+              </Link>
+              <Link className="nav-link" to="/">
                 Pricing
-              </a>
+              </Link>
             </div>
             {signinOption}
           </div>
