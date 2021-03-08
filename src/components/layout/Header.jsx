@@ -5,7 +5,7 @@ const header = () => {
   let signinOption = (
     <ul className="navbar-nav ml-4">
       <li className="nav-item">
-        <Link className="nav-link" to="/register">
+        <Link className="nav-link" to="/signup">
           Sign Up
         </Link>
       </li>

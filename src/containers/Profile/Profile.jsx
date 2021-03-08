@@ -18,7 +18,7 @@ const Profile = (props) => {
               "profile Discription col-12 col-md-7  m-2 shadow-sm p2 rounded-lg "
             }
           >
-            profile discription
+            profile description
           </div>
         </div>
       </div>
