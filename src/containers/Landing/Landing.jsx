@@ -1,8 +1,10 @@
 import React from "react";
 // import PropTypes from 'prop-types'
 import Scss from "./Landing.module.scss";
+import { useHistory } from "react-router-dom";
 
 const Landing = (props) => {
+  const history = useHistory();
   return (
     <section
       className={`d-flex justify-content-center align-items-center ${Scss.Landing}`}
@@ -18,12 +20,18 @@ const Landing = (props) => {
         </p>
 
         <p className="lead">
-          <a className="btn btn-primary btn-lg mx-2" href="#" role="button">
+          <button
+            className="btn btn-primary btn-lg mx-2"
+            onClick={() => history.push("/signup")}
+          >
             Sign Up
-          </a>
-          <a className="btn btn-dark btn-lg mx-2" href="#" role="button">
+          </button>
+          <button
+            className="btn btn-dark btn-lg mx-2"
+            onClick={() => history.push("/login")}
+          >
             Log In
-          </a>
+          </button>
         </p>
       </div>
     </section>
