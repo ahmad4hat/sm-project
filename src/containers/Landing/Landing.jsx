@@ -5,6 +5,7 @@ import { useHistory } from "react-router-dom";
 
 const Landing = (props) => {
   const history = useHistory();
+
   return (
     <section
       className={`d-flex justify-content-center align-items-center ${Scss.Landing}`}
@@ -12,11 +13,11 @@ const Landing = (props) => {
     >
       <div className="jumbotron container">
         <h1 className="font-weight-bold display-1  ">
-          Join the tracking free social media
+          Join the tracking free social media.
         </h1>
         <p className="lead">
           We are trying to provide you the basic service of social media without
-          any tracking
+          any tracking.
         </p>
 
         <p className="lead">
