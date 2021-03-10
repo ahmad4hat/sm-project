@@ -4,6 +4,7 @@ import Landing from "./containers/Landing/Landing";
 import Profile from "./containers/Profile/Profile";
 import Signup from "./containers/Signup/Signup";
 import Login from "./containers/Login/Login";
+import Posts from "./containers/Posts/Posts";
 import { Switch, Route } from "react-router-dom";
 
 const App = () => {
@@ -21,6 +22,9 @@ const App = () => {
         </Route>
         <Route path="/Login" exact>
           <Login></Login>
+        </Route>
+        <Route path="/posts" exact>
+          <Posts></Posts>
         </Route>
       </Switch>
     </Layout>

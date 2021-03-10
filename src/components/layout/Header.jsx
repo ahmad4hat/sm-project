@@ -42,7 +42,7 @@ const header = () => {
               <Link className="nav-link" to="/profile">
                 Profile
               </Link>
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/posts">
                 Pricing
               </Link>
             </div>
