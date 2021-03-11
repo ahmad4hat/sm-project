@@ -43,7 +43,7 @@ const header = () => {
                 Profile
               </Link>
               <Link className="nav-link" to="/posts">
-                Pricing
+                Posts
               </Link>
             </div>
             {signinOption}
